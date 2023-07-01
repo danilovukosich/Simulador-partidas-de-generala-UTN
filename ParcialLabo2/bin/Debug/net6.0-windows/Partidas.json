@@ -1,0 +1,30 @@
+[
+  {
+    "JugadorUno": "Danilo",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 51,
+    "PuntosJugadorDos": 26,
+    "Ganador": "ganador"
+  },
+  {
+    "JugadorUno": "Danilo",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 32,
+    "PuntosJugadorDos": 63,
+    "Ganador": "ganador"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 26,
+    "PuntosJugadorDos": 14,
+    "Ganador": "ganador"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 26,
+    "PuntosJugadorDos": 40,
+    "Ganador": "ganador"
+  }
+]
