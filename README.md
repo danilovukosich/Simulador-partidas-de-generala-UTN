@@ -22,7 +22,7 @@ Mi nombre es Danilo Vukosich, programar este proyecto fue bastante complejo en c
 
 
   ### Crear partida: 
-  Crea una partida con el jugador con el cual se ingreso contra la ma. Se pueden jugar cualquier cantidad de partidas en simultaneo y estas pueden se canceladas siempre y cuando no hayan terminado. Al finalizar cada partida salta un fomulario indicando el ganador y sus puntos.
+  Crea una partida con el jugador con el cual se ingreso y juega contra la maquina. Se pueden jugar cualquier cantidad de partidas en simultaneo y estas pueden se canceladas siempre y cuando no hayan terminado. Al finalizar cada partida salta un fomulario indicando el ganador y sus puntos.
 
   ### Estadisticas: 
   Podremos ver la cantidas de partidas jugadas, ganadas y perdidas del jugador y su historial de partidas.
