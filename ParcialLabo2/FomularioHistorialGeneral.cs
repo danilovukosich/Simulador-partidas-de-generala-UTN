@@ -16,12 +16,13 @@ namespace ParcialLabo2
         List<Partida> listaPartidas = new List<Partida>();
         string rutaArchivoPartidas;
         Jugador jugador1 = new Jugador();
+        SerializacionJson serializarDatos = new SerializacionJson();
 
         public FomularioHistorialGeneral(Jugador jugador)
         {
             InitializeComponent();
             rutaArchivoPartidas = Path.Combine(Directory.GetCurrentDirectory(), "Partidas.json");
-            listaPartidas = SerializacionJson.DeserializarJson<List<Partida>>(rutaArchivoPartidas);
+            listaPartidas = serializarDatos.DeserializarJson<List<Partida>>(rutaArchivoPartidas);
             jugador1 = jugador;
         }
 

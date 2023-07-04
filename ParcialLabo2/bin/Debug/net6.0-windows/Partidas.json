@@ -362,5 +362,19 @@
     "PuntosJugadorUno": 28,
     "PuntosJugadorDos": 39,
     "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 41,
+    "PuntosJugadorDos": 59,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 32,
+    "PuntosJugadorDos": 36,
+    "Ganador": "Maquina"
   }
 ]

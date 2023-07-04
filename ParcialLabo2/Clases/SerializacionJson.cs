@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace ParcialLabo2.Clases
 {
-    public class SerializacionJson
+    public class SerializacionJson: InterfaceSerializacionJson
     {
         //Uso de Generics
-        public static void SerializarAJson<T>(string ruta, T objeto)
+        public  void SerializarAJson<T>(string ruta, T objeto)
         {
             JsonSerializerOptions jsonSerializerOptions = new JsonSerializerOptions();
             jsonSerializerOptions.WriteIndented = true;//Para que se vea deintado 
@@ -20,7 +20,7 @@ namespace ParcialLabo2.Clases
             File.WriteAllText(ruta, objetoJson);//lo guardo en el archivo
         }
 
-        public static T DeserializarJson<T>(string ruta)
+        public  T DeserializarJson<T>(string ruta)
         {
             string objetoJson = File.ReadAllText(ruta);
 

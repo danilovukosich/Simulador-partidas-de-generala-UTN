@@ -22,6 +22,7 @@ namespace ParcialLabo2
         public CancellationToken cancellationToken;
         public CancellationTokenSource cancellationTokenSource;
         bool flagPartida = false;
+        SerializacionJson serializarDatos = new SerializacionJson();
 
         public FormularioPartida(Jugador jugador)
         {
@@ -32,7 +33,7 @@ namespace ParcialLabo2
             this.cancellationTokenSource = new CancellationTokenSource();
             this.cancellationToken = this.cancellationTokenSource.Token;
 
-            listaPartidas = SerializacionJson.DeserializarJson<List<Partida>>(rutaArchivoPartidas);
+            listaPartidas = serializarDatos.DeserializarJson<List<Partida>>(rutaArchivoPartidas);
         }
 
         private void FormularioPartida_Load(object sender, EventArgs e)
@@ -460,11 +461,11 @@ namespace ParcialLabo2
                 }
                 else { jugadorIngresado.PartidasPerdidas++; }
 
-                listaPartidas = SerializacionJson.DeserializarJson<List<Partida>>(rutaArchivoPartidas);
+                listaPartidas = serializarDatos.DeserializarJson<List<Partida>>(rutaArchivoPartidas);
                 listaPartidas.Add(nuevaPartida);
 
 
-                SerializacionJson.SerializarAJson<List<Partida>>(rutaArchivoPartidas, listaPartidas);
+                serializarDatos.SerializarAJson<List<Partida>>(rutaArchivoPartidas, listaPartidas);
 
                 AccesoDatosJugador.ModificarDatosJugador(jugadorIngresado);
 
