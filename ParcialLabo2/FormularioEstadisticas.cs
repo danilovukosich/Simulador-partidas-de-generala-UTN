@@ -35,7 +35,7 @@ namespace ParcialLabo2
 
             foreach (Partida item in listaPartidas)
             {
-                if(item.JugadorUno == jugador.Usuario)
+                if (item.JugadorUno == jugador.Usuario)
                 {
                     int rowIndex = dataGridView1.Rows.Add();
                     DataGridViewRow row = dataGridView1.Rows[rowIndex];
@@ -45,16 +45,16 @@ namespace ParcialLabo2
                     row.Cells[3].Value = item.PuntosJugadorDos.ToString();
                     row.Cells[4].Value = item.Ganador;
                 }
-                 
+
             }
 
         }
 
         private void FormularioEstadisticas_FormClosed(object sender, FormClosedEventArgs e)
         {
-            FormPantallaPrincipal form = new FormPantallaPrincipal(jugador);
-            this.Hide();
-            form.Show();
+
+
+
         }
     }
 }

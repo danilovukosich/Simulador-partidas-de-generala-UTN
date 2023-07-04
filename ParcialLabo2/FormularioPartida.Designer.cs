@@ -35,7 +35,6 @@
             labelCuatroJug1 = new Label();
             labelCincoJug1 = new Label();
             labelSeisJug1 = new Label();
-            labelEscaleraJug1 = new Label();
             labelFullJug1 = new Label();
             labelPokerJug1 = new Label();
             labelGeneralaJug1 = new Label();
@@ -44,7 +43,6 @@
             labelGeneralaJug2 = new Label();
             labelPokerJug2 = new Label();
             labelFullJug2 = new Label();
-            labelEscaleraJug2 = new Label();
             labelSeisJug2 = new Label();
             labelCincoJug2 = new Label();
             labelCuatroJug2 = new Label();
@@ -52,6 +50,7 @@
             labelDosJug2 = new Label();
             labelUnoJug2 = new Label();
             panel1 = new Panel();
+            labelEstadoPartida = new Label();
             labelPuntosJugador2 = new Label();
             labelPuntosJugador1 = new Label();
             pictureBox6 = new PictureBox();
@@ -156,19 +155,6 @@
             labelSeisJug1.TabIndex = 49;
             labelSeisJug1.Text = "6:";
             // 
-            // labelEscaleraJug1
-            // 
-            labelEscaleraJug1.Anchor = AnchorStyles.None;
-            labelEscaleraJug1.AutoSize = true;
-            labelEscaleraJug1.BackColor = Color.Transparent;
-            labelEscaleraJug1.Font = new Font("MS Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            labelEscaleraJug1.ForeColor = SystemColors.ActiveCaptionText;
-            labelEscaleraJug1.Location = new Point(49, 330);
-            labelEscaleraJug1.Name = "labelEscaleraJug1";
-            labelEscaleraJug1.Size = new Size(148, 30);
-            labelEscaleraJug1.TabIndex = 50;
-            labelEscaleraJug1.Text = "Escalera:";
-            // 
             // labelFullJug1
             // 
             labelFullJug1.Anchor = AnchorStyles.None;
@@ -176,7 +162,7 @@
             labelFullJug1.BackColor = Color.Transparent;
             labelFullJug1.Font = new Font("MS Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
             labelFullJug1.ForeColor = SystemColors.ActiveCaptionText;
-            labelFullJug1.Location = new Point(64, 370);
+            labelFullJug1.Location = new Point(64, 344);
             labelFullJug1.Name = "labelFullJug1";
             labelFullJug1.Size = new Size(88, 30);
             labelFullJug1.TabIndex = 51;
@@ -189,7 +175,7 @@
             labelPokerJug1.BackColor = Color.Transparent;
             labelPokerJug1.Font = new Font("MS Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
             labelPokerJug1.ForeColor = SystemColors.ActiveCaptionText;
-            labelPokerJug1.Location = new Point(64, 414);
+            labelPokerJug1.Location = new Point(64, 388);
             labelPokerJug1.Name = "labelPokerJug1";
             labelPokerJug1.Size = new Size(103, 30);
             labelPokerJug1.TabIndex = 52;
@@ -202,7 +188,7 @@
             labelGeneralaJug1.BackColor = Color.Transparent;
             labelGeneralaJug1.Font = new Font("MS Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
             labelGeneralaJug1.ForeColor = SystemColors.ActiveCaptionText;
-            labelGeneralaJug1.Location = new Point(49, 455);
+            labelGeneralaJug1.Location = new Point(49, 429);
             labelGeneralaJug1.Name = "labelGeneralaJug1";
             labelGeneralaJug1.Size = new Size(148, 30);
             labelGeneralaJug1.TabIndex = 53;
@@ -241,7 +227,7 @@
             labelGeneralaJug2.BackColor = Color.Transparent;
             labelGeneralaJug2.Font = new Font("MS Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
             labelGeneralaJug2.ForeColor = SystemColors.ActiveCaptionText;
-            labelGeneralaJug2.Location = new Point(822, 455);
+            labelGeneralaJug2.Location = new Point(822, 429);
             labelGeneralaJug2.Name = "labelGeneralaJug2";
             labelGeneralaJug2.Size = new Size(148, 30);
             labelGeneralaJug2.TabIndex = 65;
@@ -254,7 +240,7 @@
             labelPokerJug2.BackColor = Color.Transparent;
             labelPokerJug2.Font = new Font("MS Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
             labelPokerJug2.ForeColor = SystemColors.ActiveCaptionText;
-            labelPokerJug2.Location = new Point(837, 414);
+            labelPokerJug2.Location = new Point(837, 388);
             labelPokerJug2.Name = "labelPokerJug2";
             labelPokerJug2.Size = new Size(103, 30);
             labelPokerJug2.TabIndex = 64;
@@ -267,24 +253,11 @@
             labelFullJug2.BackColor = Color.Transparent;
             labelFullJug2.Font = new Font("MS Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
             labelFullJug2.ForeColor = SystemColors.ActiveCaptionText;
-            labelFullJug2.Location = new Point(837, 370);
+            labelFullJug2.Location = new Point(837, 344);
             labelFullJug2.Name = "labelFullJug2";
             labelFullJug2.Size = new Size(88, 30);
             labelFullJug2.TabIndex = 63;
             labelFullJug2.Text = "Full:";
-            // 
-            // labelEscaleraJug2
-            // 
-            labelEscaleraJug2.Anchor = AnchorStyles.None;
-            labelEscaleraJug2.AutoSize = true;
-            labelEscaleraJug2.BackColor = Color.Transparent;
-            labelEscaleraJug2.Font = new Font("MS Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            labelEscaleraJug2.ForeColor = SystemColors.ActiveCaptionText;
-            labelEscaleraJug2.Location = new Point(822, 330);
-            labelEscaleraJug2.Name = "labelEscaleraJug2";
-            labelEscaleraJug2.Size = new Size(148, 30);
-            labelEscaleraJug2.TabIndex = 62;
-            labelEscaleraJug2.Text = "Escalera:";
             // 
             // labelSeisJug2
             // 
@@ -368,6 +341,7 @@
             // 
             panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(labelEstadoPartida);
             panel1.Controls.Add(labelPuntosJugador2);
             panel1.Controls.Add(labelPuntosJugador1);
             panel1.Controls.Add(pictureBox6);
@@ -380,14 +354,12 @@
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(labelEscaleraJug1);
             panel1.Controls.Add(labelGeneralaJug2);
             panel1.Controls.Add(labelUnoJug1);
             panel1.Controls.Add(labelPokerJug2);
             panel1.Controls.Add(labelDosJug1);
             panel1.Controls.Add(labelFullJug2);
             panel1.Controls.Add(labelTresJug1);
-            panel1.Controls.Add(labelEscaleraJug2);
             panel1.Controls.Add(labelSeisJug2);
             panel1.Controls.Add(labelCuatroJug1);
             panel1.Controls.Add(labelCincoJug2);
@@ -405,13 +377,27 @@
             panel1.Size = new Size(1036, 547);
             panel1.TabIndex = 66;
             // 
+            // labelEstadoPartida
+            // 
+            labelEstadoPartida.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            labelEstadoPartida.AutoSize = true;
+            labelEstadoPartida.BackColor = Color.Transparent;
+            labelEstadoPartida.Font = new Font("MS Gothic", 28.2F, FontStyle.Bold, GraphicsUnit.Point);
+            labelEstadoPartida.ForeColor = Color.Tan;
+            labelEstadoPartida.Location = new Point(313, 13);
+            labelEstadoPartida.Name = "labelEstadoPartida";
+            labelEstadoPartida.Size = new Size(420, 47);
+            labelEstadoPartida.TabIndex = 68;
+            labelEstadoPartida.Text = "PARTIDA EN CURSO";
+            labelEstadoPartida.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // labelPuntosJugador2
             // 
             labelPuntosJugador2.Anchor = AnchorStyles.None;
             labelPuntosJugador2.AutoSize = true;
             labelPuntosJugador2.BackColor = Color.Transparent;
             labelPuntosJugador2.Font = new Font("MS Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            labelPuntosJugador2.ForeColor = SystemColors.ActiveCaptionText;
+            labelPuntosJugador2.ForeColor = Color.Tan;
             labelPuntosJugador2.Location = new Point(822, 496);
             labelPuntosJugador2.Name = "labelPuntosJugador2";
             labelPuntosJugador2.Size = new Size(118, 30);
@@ -424,8 +410,8 @@
             labelPuntosJugador1.AutoSize = true;
             labelPuntosJugador1.BackColor = Color.Transparent;
             labelPuntosJugador1.Font = new Font("MS Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            labelPuntosJugador1.ForeColor = SystemColors.ActiveCaptionText;
-            labelPuntosJugador1.Location = new Point(49, 496);
+            labelPuntosJugador1.ForeColor = Color.Tan;
+            labelPuntosJugador1.Location = new Point(64, 485);
             labelPuntosJugador1.Name = "labelPuntosJugador1";
             labelPuntosJugador1.Size = new Size(118, 30);
             labelPuntosJugador1.TabIndex = 76;
@@ -571,6 +557,7 @@
             Controls.Add(labelJugador1);
             Name = "FormularioPartida";
             Text = "FormularioPartida";
+            FormClosing += FormularioPartida_FormClosing;
             Load += FormularioPartida_Load;
             Shown += FormularioPartida_Shown;
             panel1.ResumeLayout(false);
@@ -597,7 +584,6 @@
         public Label labelCuatroJug1;
         public Label labelCincoJug1;
         public Label labelSeisJug1;
-        public Label labelEscaleraJug1;
         public Label labelFullJug1;
         public Label labelPokerJug1;
         public Label labelGeneralaJug1;
@@ -606,7 +592,6 @@
         public Label labelGeneralaJug2;
         public Label labelPokerJug2;
         public Label labelFullJug2;
-        public Label labelEscaleraJug2;
         public Label labelSeisJug2;
         public Label labelCincoJug2;
         public Label labelCuatroJug2;
@@ -627,5 +612,6 @@
         private PictureBox pictureBox1;
         public Label labelPuntosJugador2;
         public Label labelPuntosJugador1;
+        public Label labelEstadoPartida;
     }
 }

@@ -1,30 +1,366 @@
 [
   {
-    "JugadorUno": "Danilo",
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 24,
+    "PuntosJugadorDos": 94,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 20,
+    "PuntosJugadorDos": 32,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 38,
+    "PuntosJugadorDos": 64,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 61,
+    "PuntosJugadorDos": 34,
+    "Ganador": "Danilo"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 30,
+    "PuntosJugadorDos": 23,
+    "Ganador": "Danilo"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 35,
+    "PuntosJugadorDos": 64,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 26,
+    "PuntosJugadorDos": 37,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 28,
+    "PuntosJugadorDos": 40,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 50,
+    "PuntosJugadorDos": 66,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 34,
+    "PuntosJugadorDos": 52,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 20,
+    "PuntosJugadorDos": 26,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 106,
+    "PuntosJugadorDos": 12,
+    "Ganador": "Danilo"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 56,
+    "PuntosJugadorDos": 45,
+    "Ganador": "Danilo"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 26,
+    "PuntosJugadorDos": 31,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 36,
+    "PuntosJugadorDos": 83,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 16,
+    "PuntosJugadorDos": 66,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 39,
+    "PuntosJugadorDos": 42,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 16,
+    "PuntosJugadorDos": 50,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 45,
+    "PuntosJugadorDos": 26,
+    "Ganador": "Danilo"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 24,
+    "PuntosJugadorDos": 24,
+    "Ganador": "Empate"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 37,
+    "PuntosJugadorDos": 30,
+    "Ganador": "Danilo"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 22,
+    "PuntosJugadorDos": 16,
+    "Ganador": "Danilo"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 70,
+    "PuntosJugadorDos": 32,
+    "Ganador": "Danilo"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 26,
+    "PuntosJugadorDos": 26,
+    "Ganador": "Empate"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 22,
+    "PuntosJugadorDos": 20,
+    "Ganador": "Danilo"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 60,
+    "PuntosJugadorDos": 20,
+    "Ganador": "Danilo"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
     "JugadorDos": "Maquina",
     "PuntosJugadorUno": 51,
-    "PuntosJugadorDos": 26,
-    "Ganador": "ganador"
+    "PuntosJugadorDos": 32,
+    "Ganador": "Danilo"
   },
   {
-    "JugadorUno": "Danilo",
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 60,
+    "PuntosJugadorDos": 53,
+    "Ganador": "Danilo"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 53,
+    "PuntosJugadorDos": 66,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 31,
+    "PuntosJugadorDos": 27,
+    "Ganador": "Danilo"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 44,
+    "PuntosJugadorDos": 29,
+    "Ganador": "Danilo"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 16,
+    "PuntosJugadorDos": 24,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "eli123",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 46,
+    "PuntosJugadorDos": 21,
+    "Ganador": "elias"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
     "JugadorDos": "Maquina",
     "PuntosJugadorUno": 32,
-    "PuntosJugadorDos": 63,
-    "Ganador": "ganador"
+    "PuntosJugadorDos": 42,
+    "Ganador": "Maquina"
   },
   {
     "JugadorUno": "DaniloVukosich",
     "JugadorDos": "Maquina",
-    "PuntosJugadorUno": 26,
-    "PuntosJugadorDos": 14,
-    "Ganador": "ganador"
+    "PuntosJugadorUno": 20,
+    "PuntosJugadorDos": 71,
+    "Ganador": "Maquina"
   },
   {
     "JugadorUno": "DaniloVukosich",
     "JugadorDos": "Maquina",
-    "PuntosJugadorUno": 26,
-    "PuntosJugadorDos": 40,
-    "Ganador": "ganador"
+    "PuntosJugadorUno": 28,
+    "PuntosJugadorDos": 35,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 36,
+    "PuntosJugadorDos": 16,
+    "Ganador": "Danilo"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 28,
+    "PuntosJugadorDos": 26,
+    "Ganador": "Danilo"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 32,
+    "PuntosJugadorDos": 24,
+    "Ganador": "Danilo"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 41,
+    "PuntosJugadorDos": 42,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 34,
+    "PuntosJugadorDos": 18,
+    "Ganador": "Danilo"
+  },
+  {
+    "JugadorUno": "pepito",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 34,
+    "PuntosJugadorDos": 52,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "pepito",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 36,
+    "PuntosJugadorDos": 58,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 16,
+    "PuntosJugadorDos": 32,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "pepito",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 72,
+    "PuntosJugadorDos": 24,
+    "Ganador": "pepe"
+  },
+  {
+    "JugadorUno": "diegote10",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 28,
+    "PuntosJugadorDos": 34,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "diegote10",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 43,
+    "PuntosJugadorDos": 22,
+    "Ganador": "diego"
+  },
+  {
+    "JugadorUno": "diegote10",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 33,
+    "PuntosJugadorDos": 34,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 22,
+    "PuntosJugadorDos": 39,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 49,
+    "PuntosJugadorDos": 36,
+    "Ganador": "Danilo"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 32,
+    "PuntosJugadorDos": 54,
+    "Ganador": "Maquina"
+  },
+  {
+    "JugadorUno": "DaniloVukosich",
+    "JugadorDos": "Maquina",
+    "PuntosJugadorUno": 28,
+    "PuntosJugadorDos": 39,
+    "Ganador": "Maquina"
   }
 ]
