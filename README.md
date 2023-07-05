@@ -38,4 +38,64 @@ Mi nombre es Danilo Vukosich, programar este proyecto fue bastante complejo en c
 
 
 
+### -SQL
+
+![SQLnuevo](https://github.com/danilovukosich/Vukosich.Danilo.TP2/assets/86834937/4f26aad3-a806-45bd-a2df-1e2b02c5cbfc)
+
+Utilizo SQL para guardar los datos de cada jugador una vez creados y actualizarlos unavaz terminada la partida.
+
+### -Excepciones
+
+![Manejo de Excepciones](https://github.com/danilovukosich/Vukosich.Danilo.TP2/assets/86834937/0eafcf45-2471-4610-8fb9-65ae0591bb1d)
+
+Excepciones utilizadas por si el usuario ingresado llega a ser NULL;
+
+### -Unit Testing
+
+![Testeo de los resultados de las tiradas](https://github.com/danilovukosich/Vukosich.Danilo.TP2/assets/86834937/3422b244-f637-4040-8c60-a20b465e59e9)
+
+Testeo si los metodos de los puntos funcionan correctamente al pasarles un array de numeros que simboliza una tirada.
+
+### -Generics y Serializacion
+
+![Serializacion](https://github.com/danilovukosich/Vukosich.Danilo.TP2/assets/86834937/f9b9762a-3565-498b-aea5-523bec7597c4)
+
+Utilizo generics en la serializacion de Json para poder serializar cualquier tipo de objeto. 
+
+### Interfaces
+
+![Interfaz](https://github.com/danilovukosich/Vukosich.Danilo.TP2/assets/86834937/3ad4802b-e186-4b8b-9940-becaf5a186dd)
+
+Utilizo una interfaz para la serializacion.
+
+
+### -Task
+
+![Task](https://github.com/danilovukosich/Vukosich.Danilo.TP2/assets/86834937/5bdd3ad2-735f-4052-8594-d01da497d098)
+
+Utilizo Tasks para poder crear varias partidas al mismo tiempo si problema.
+
+### -Eventos y Delegados
+
+![Eventos y Delegados](https://github.com/danilovukosich/Vukosich.Danilo.TP2/assets/86834937/953bc0c0-1e31-4825-80fb-b8d7a8f2db5d)
+
+Utilizo eventos y delegados en el fomulario del ganador para mostrar los puntos y el nombre del ganador.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
