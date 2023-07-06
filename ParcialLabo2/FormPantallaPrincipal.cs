@@ -29,7 +29,7 @@ namespace ParcialLabo2
         private void buttonEstadisticas_Click(object sender, EventArgs e)
         {
             FormularioEstadisticas formEstadisticas = new FormularioEstadisticas(jugadorIngresado);
-            this.Hide();
+            
             formEstadisticas.ShowDialog();
         }
 
@@ -49,6 +49,13 @@ namespace ParcialLabo2
             FormInicioSesion form = new FormInicioSesion();
             this.Hide();
             form.ShowDialog();
+        }
+
+        private void buttonHistorialPartidas_Click(object sender, EventArgs e)
+        {
+            FomularioHistorialGeneral fomularioHistorialGeneral = new FomularioHistorialGeneral(jugadorIngresado);
+
+            fomularioHistorialGeneral.ShowDialog();
         }
     }
 }

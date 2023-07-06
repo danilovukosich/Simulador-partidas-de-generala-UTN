@@ -28,3 +28,5 @@ C:\Users\vukos\OneDrive\Documentos\Proyectos_Visual_Studio\ParcialLabo2\bin\Debu
 C:\Users\vukos\OneDrive\Documentos\Proyectos_Visual_Studio\ParcialLabo2\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\vukos\OneDrive\Documentos\Proyectos_Visual_Studio\ParcialLabo2\obj\Debug\net6.0-windows\ParcialLabo2.FormularioEstadisticas.resources
 C:\Users\vukos\OneDrive\Documentos\Proyectos_Visual_Studio\ParcialLabo2\obj\Debug\net6.0-windows\ParcialLabo2.FormularioPartida.resources
+C:\Users\vukos\OneDrive\Documentos\Proyectos_Visual_Studio\ParcialLabo2\obj\Debug\net6.0-windows\ParcialLabo2.FomularioHistorialGeneral.resources
+C:\Users\vukos\OneDrive\Documentos\Proyectos_Visual_Studio\ParcialLabo2\obj\Debug\net6.0-windows\ParcialLabo2.FormularioGanador.resources

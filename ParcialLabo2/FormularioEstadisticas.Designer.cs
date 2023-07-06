@@ -33,6 +33,11 @@
             panel2 = new Panel();
             label5 = new Label();
             dataGridView1 = new DataGridView();
+            jugadorUno = new DataGridViewTextBoxColumn();
+            puntosJugadorUno = new DataGridViewTextBoxColumn();
+            jugadorDos = new DataGridViewTextBoxColumn();
+            puntosJugador2 = new DataGridViewTextBoxColumn();
+            ganador = new DataGridViewTextBoxColumn();
             iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             labelPartidasPerdidas = new Label();
@@ -42,11 +47,6 @@
             label3 = new Label();
             label1 = new Label();
             label2 = new Label();
-            jugadorUno = new DataGridViewTextBoxColumn();
-            puntosJugadorUno = new DataGridViewTextBoxColumn();
-            jugadorDos = new DataGridViewTextBoxColumn();
-            puntosJugador2 = new DataGridViewTextBoxColumn();
-            ganador = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -91,9 +91,9 @@
             label5.ForeColor = SystemColors.ActiveCaptionText;
             label5.Location = new Point(506, 103);
             label5.Name = "label5";
-            label5.Size = new Size(298, 30);
+            label5.Size = new Size(478, 30);
             label5.TabIndex = 34;
-            label5.Text = "Historial partidas:";
+            label5.Text = "Historial partidas del jugador:";
             // 
             // dataGridView1
             // 
@@ -105,6 +105,46 @@
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.Size = new Size(476, 259);
             dataGridView1.TabIndex = 33;
+            // 
+            // jugadorUno
+            // 
+            jugadorUno.HeaderText = "JUGADOR 1";
+            jugadorUno.MinimumWidth = 6;
+            jugadorUno.Name = "jugadorUno";
+            jugadorUno.ReadOnly = true;
+            jugadorUno.Width = 125;
+            // 
+            // puntosJugadorUno
+            // 
+            puntosJugadorUno.HeaderText = "PUNTOS";
+            puntosJugadorUno.MinimumWidth = 6;
+            puntosJugadorUno.Name = "puntosJugadorUno";
+            puntosJugadorUno.ReadOnly = true;
+            puntosJugadorUno.Width = 125;
+            // 
+            // jugadorDos
+            // 
+            jugadorDos.HeaderText = "JUGADOR 2";
+            jugadorDos.MinimumWidth = 6;
+            jugadorDos.Name = "jugadorDos";
+            jugadorDos.ReadOnly = true;
+            jugadorDos.Width = 125;
+            // 
+            // puntosJugador2
+            // 
+            puntosJugador2.HeaderText = "PUNTOS";
+            puntosJugador2.MinimumWidth = 6;
+            puntosJugador2.Name = "puntosJugador2";
+            puntosJugador2.ReadOnly = true;
+            puntosJugador2.Width = 125;
+            // 
+            // ganador
+            // 
+            ganador.HeaderText = "GANADOR";
+            ganador.MinimumWidth = 6;
+            ganador.Name = "ganador";
+            ganador.ReadOnly = true;
+            ganador.Width = 125;
             // 
             // iconPictureBox2
             // 
@@ -224,46 +264,6 @@
             label2.Size = new Size(397, 60);
             label2.TabIndex = 24;
             label2.Text = "ESTADISTICAS";
-            // 
-            // jugadorUno
-            // 
-            jugadorUno.HeaderText = "JUGADOR 1";
-            jugadorUno.MinimumWidth = 6;
-            jugadorUno.Name = "jugadorUno";
-            jugadorUno.ReadOnly = true;
-            jugadorUno.Width = 125;
-            // 
-            // puntosJugadorUno
-            // 
-            puntosJugadorUno.HeaderText = "PUNTOS";
-            puntosJugadorUno.MinimumWidth = 6;
-            puntosJugadorUno.Name = "puntosJugadorUno";
-            puntosJugadorUno.ReadOnly = true;
-            puntosJugadorUno.Width = 125;
-            // 
-            // jugadorDos
-            // 
-            jugadorDos.HeaderText = "JUGADOR 2";
-            jugadorDos.MinimumWidth = 6;
-            jugadorDos.Name = "jugadorDos";
-            jugadorDos.ReadOnly = true;
-            jugadorDos.Width = 125;
-            // 
-            // puntosJugador2
-            // 
-            puntosJugador2.HeaderText = "PUNTOS";
-            puntosJugador2.MinimumWidth = 6;
-            puntosJugador2.Name = "puntosJugador2";
-            puntosJugador2.ReadOnly = true;
-            puntosJugador2.Width = 125;
-            // 
-            // ganador
-            // 
-            ganador.HeaderText = "GANADOR";
-            ganador.MinimumWidth = 6;
-            ganador.Name = "ganador";
-            ganador.ReadOnly = true;
-            ganador.Width = 125;
             // 
             // FormularioEstadisticas
             // 

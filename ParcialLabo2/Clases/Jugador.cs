@@ -81,6 +81,13 @@ namespace ParcialLabo2.Clases
             set { partidasPerdidas = value; }
         }
 
+        /// <summary>
+        /// Valida si el jugador existe o no.
+        /// </summary>
+        /// <param name="listaJugadores"></param>
+        /// <param name="usuario"></param>
+        /// <param name="clave"></param>
+        /// <returns>Devuelde el jugador si es que existe, sino retorna null</returns>
         static public Jugador ValidarCredenciales(List<Jugador> listaJugadores, string usuario, string clave)
         {
 
@@ -96,6 +103,52 @@ namespace ParcialLabo2.Clases
             }
 
             return jugadorIngresado;
+        }
+
+        /// <summary>
+        /// Determina el nombre de la persona que gano.
+        /// </summary>
+        /// <param name="pts1"></param>
+        /// <param name="pts2"></param>
+        /// <param name="nombreJug1"></param>
+        /// <returns>Devuelve el nombre de jugador si gana, Maquina si piede o empate si empata.</returns>
+        public static string CalcularGanador(int pts1, int pts2, string nombreJug1)
+        {
+            string ganador = "Empate";
+
+            if (pts1 > pts2)
+            {
+                return nombreJug1;
+            }
+            else
+            {
+                if (pts1 < pts2)
+                {
+                    return "Maquina";
+                }
+             
+            }
+
+            return ganador;
+
+        }
+        
+        /// <summary>
+        /// Determina los puntos del ganador de la partida.
+        /// </summary>
+        /// <param name="pts1"></param>
+        /// <param name="pts2"></param>
+        /// <returns>Devuelve los puntos del jugador que gano.</returns>
+        public static int PuntosGanador(int pts1, int pts2)
+        {
+            int ptsGanador = pts1;
+            
+            if (pts1 < pts2)
+            {
+                ptsGanador = pts2;
+            }
+
+            return ptsGanador;
         }
 
     }

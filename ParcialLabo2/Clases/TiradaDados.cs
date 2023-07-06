@@ -8,6 +8,10 @@ namespace ParcialLabo2.Clases
 {
     public class TiradaDados
     {
+        /// <summary>
+        /// Genera un array de 5 numeros rendom
+        /// </summary>
+        /// <returns></returns>
         public static int[] TiradarDados()
         {
             int[] dados = new int[5];
@@ -24,6 +28,11 @@ namespace ParcialLabo2.Clases
         }
 
         //todos los dados iguales
+        /// <summary>
+        /// Determina si la tirada de dados es generala o no.
+        /// </summary>
+        /// <param name="tiradaDados"></param>
+        /// <returns>Devuelve True si es Generala o False si no lo es</returns>
         public static bool Generala(int[] tiradaDados)
         {
             int primerNumero = tiradaDados[0];
@@ -39,6 +48,11 @@ namespace ParcialLabo2.Clases
         }
 
         //cuando hay 4 iguales
+        /// <summary>
+        /// Determina si la tirada es Poker o no.
+        /// </summary>
+        /// <param name="tiradaDados"></param>
+        /// <returns>Devuelve True si es Poker y False si no lo es</returns>
         public static bool Poker(int[] tiradaDados)
         {
             Array.Sort(tiradaDados);
@@ -52,6 +66,11 @@ namespace ParcialLabo2.Clases
             return false;
         }
 
+        /// <summary>
+        /// Determina si la tirada es Full o no.
+        /// </summary>
+        /// <param name="tiradaDados"></param>
+        /// <returns>Devuelve True si es Full y False si no lo es</returns>
         public static bool Full(int[] tiradaDados)
         {
             Array.Sort(tiradaDados);
@@ -65,6 +84,12 @@ namespace ParcialLabo2.Clases
         }
 
         //varias mertodos iguales con diferente numero como parametro
+        /// <summary>
+        /// Metodo que segun el numero que ingrese determina si se repite o no.
+        /// </summary>
+        /// <param name="tiradaDados"></param>
+        /// <param name="numero"></param>
+        /// <returns>Devuelve la acumulacion de veces que se repita el numero, si no se repite devuelve cero.</returns>
         public static int Numeros(int[] tiradaDados, int numero)
         {
             int contador = 0;
@@ -86,7 +111,11 @@ namespace ParcialLabo2.Clases
             return 0;
         }
 
-
+        /// <summary>
+        /// Determina que imagen corresponde al numero que se le ingrese.
+        /// </summary>
+        /// <param name="numero"></param>
+        /// <returns>Devuelve la imagen que corresponda al numero</returns>
         public static Image DeterminarDado(int numero)
         {
             Image nuevaImagen = Properties.Resources.dado1;
@@ -121,6 +150,19 @@ namespace ParcialLabo2.Clases
             return nuevaImagen;
         }
 
+        /// <summary>
+        /// Calcula la suma total de puntos de la paritda.
+        /// </summary>
+        /// <param name="generala"></param>
+        /// <param name="poker"></param>
+        /// <param name="full"></param>
+        /// <param name="uno"></param>
+        /// <param name="dos"></param>
+        /// <param name="tres"></param>
+        /// <param name="cuatro"></param>
+        /// <param name="cinco"></param>
+        /// <param name="seis"></param>
+        /// <returns>Devuelve la suma total de puntos de la partida.</returns>
         public static int CalcularPuntos(int generala, int poker, int full, int uno, int dos, int tres, int cuatro, int cinco, int seis)
         {
             return (generala + poker + full + uno + dos + tres + cuatro + cinco + seis);

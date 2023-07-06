@@ -9,15 +9,17 @@ using System.Threading.Tasks;
 
 namespace ParcialLabo2.AccesoDatosSQL
 {
-    public static class AccesoDatosJugador
+    public static class AccesoDatosJugador 
     {
         static string conexionStirng;
         static SqlCommand comando;
         static SqlConnection conexion;
 
+        
+
         static AccesoDatosJugador()
         {
-            conexionStirng = @"Data Source =.;Database = GENERALA_DB;Trusted_Connection = True;"; 
+            conexionStirng = @"Data Source =.;Database = GENERALA_DB;Trusted_Connection = True;User ID=sa;Password=alumno;";
             comando = new SqlCommand();
             conexion = new SqlConnection(conexionStirng);
             comando.Connection = conexion;
@@ -25,6 +27,10 @@ namespace ParcialLabo2.AccesoDatosSQL
         
         }
 
+        /// <summary>
+        /// Lee y devuelve los jugadores de una base de datos
+        /// </summary>
+        /// <returns>Lista de jugadores</returns>
         public static List<Jugador> LeerDatosJugador()
         {
             List<Jugador> listaJugadores = new List<Jugador>();
@@ -51,13 +57,14 @@ namespace ParcialLabo2.AccesoDatosSQL
                     listaJugadores.Add(jugadorAux);
                     
                 }
-
+                
                 return listaJugadores;
 
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                throw;
+                MessageBox.Show("Error en la lectura de datos" + e.Message);
+                return null;
             }
             finally 
             { 
@@ -67,21 +74,31 @@ namespace ParcialLabo2.AccesoDatosSQL
            
         }
 
-
+        /// <summary>
+        /// Escribe un nuevo jugador en la base de datos.
+        /// </summary>
+        /// <param name="jugador"></param>
         public static void EscribirDatosJugador(Jugador jugador)
         {
             try 
             {
-                comando.Parameters.Clear();
-                conexion.Open();
-                comando.CommandText = "INSERT INTO TABLA_JUGADORES (NOMBRE, APELLIDO, USUARIO, CONTRASENIA, PARTIDAS_JUGADAS, PARTIDAS_GANADAS, PARTIDAS_PERDIDAS)" +
-                                     $" VALUES ('{jugador.Nombre}', '{jugador.Apellido}', '{jugador.Usuario}', '{jugador.Contrasenia}', {jugador.PartidasJugadas.ToString()}, {jugador.PartidasGanadas.ToString()}, {jugador.PartidasPerdidas.ToString()});";
+                if(jugador!=null)
+                {
+                    comando.Parameters.Clear();
+                    conexion.Open();
+                    comando.CommandText = "INSERT INTO TABLA_JUGADORES (NOMBRE, APELLIDO, USUARIO, CONTRASENIA, PARTIDAS_JUGADAS, PARTIDAS_GANADAS, PARTIDAS_PERDIDAS)" +
+                                            $" VALUES ('{jugador.Nombre}', '{jugador.Apellido}', '{jugador.Usuario}', '{jugador.Contrasenia}', {jugador.PartidasJugadas.ToString()}, {jugador.PartidasGanadas.ToString()}, {jugador.PartidasPerdidas.ToString()});";
 
-                comando.ExecuteNonQuery();
+                    comando.ExecuteNonQuery();
+                }
+                else
+                {
+                    throw new ExcepcionAccesoDatos("Error al escribir datos (El jugador es null)!");
+                }
             }
-            catch (Exception) 
+            catch (ExcepcionAccesoDatos e) 
             {
-                throw;
+                MessageBox.Show(e.Message);
             }
             finally
             {
@@ -89,20 +106,33 @@ namespace ParcialLabo2.AccesoDatosSQL
             }
         }
 
+        /// <summary>
+        /// Modifica las partidas jugadas, las paritdas perdida y las partidas ganadas
+        /// en la base de datos segun el id del jugador ingresado
+        /// </summary>
+        /// <param name="jugador"></param>
         public static void ModificarDatosJugador(Jugador jugador)
         {
             try
             {
-                comando.Parameters.Clear();
-                conexion.Open();
-                comando.CommandText = $"UPDATE TABLA_JUGADORES SET PARTIDAS_JUGADAS = {jugador.PartidasJugadas.ToString()}, PARTIDAS_GANADAS = {jugador.PartidasGanadas.ToString()}, PARTIDAS_PERDIDAS = {jugador.PartidasPerdidas.ToString()}" +
-                    $" WHERE ID = {jugador.Id};";
+                if(jugador!=null)
+                {
+                    comando.Parameters.Clear();
+                    conexion.Open();
+                    comando.CommandText = $"UPDATE TABLA_JUGADORES SET PARTIDAS_JUGADAS = {jugador.PartidasJugadas.ToString()}, PARTIDAS_GANADAS = {jugador.PartidasGanadas.ToString()}, PARTIDAS_PERDIDAS = {jugador.PartidasPerdidas.ToString()}" +
+                        $" WHERE ID = {jugador.Id};";
 
-                comando.ExecuteNonQuery();
+                    comando.ExecuteNonQuery();
+
+                }
+                else
+                {
+                    throw new ExcepcionAccesoDatos("\"Erro al modificar datos (El jugador es null)!\"");
+                }
             }
-            catch(Exception)
+            catch(Exception e)
             {
-                throw;
+                MessageBox.Show(e.Message);
             }
             finally 
             { 

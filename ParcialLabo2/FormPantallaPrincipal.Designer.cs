@@ -88,6 +88,7 @@
             buttonHistorialPartidas.TabIndex = 40;
             buttonHistorialPartidas.Text = "HISTORIAL PARTIDAS";
             buttonHistorialPartidas.UseVisualStyleBackColor = false;
+            buttonHistorialPartidas.Click += buttonHistorialPartidas_Click;
             // 
             // iconPictureBox1
             // 

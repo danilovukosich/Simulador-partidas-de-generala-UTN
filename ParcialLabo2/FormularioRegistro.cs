@@ -21,81 +21,49 @@ namespace ParcialLabo2
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
+            this.Close();
             this.Hide();
-            FormInicioSesion formInicio = new FormInicioSesion();
-            formInicio.ShowDialog();
+
         }
 
         private void textBoxNombre_Enter(object sender, EventArgs e)
         {
-            if (textBoxNombre.Text == "Nombre")
-            {
-                textBoxNombre.Text = "";
-                textBoxNombre.ForeColor = Color.Gray;
-            }
+
         }
 
         private void textBoxNombre_Leave(object sender, EventArgs e)
         {
-            if (textBoxNombre.Text == "")
-            {
-                textBoxNombre.Text = "Nombre";
-                textBoxNombre.ForeColor = Color.Gray;
-            }
+
         }
 
         private void textBoxApellido_Enter(object sender, EventArgs e)
         {
-            if (textBoxApellido.Text == "Apellido")
-            {
-                textBoxApellido.Text = "";
-                textBoxApellido.ForeColor = Color.Gray;
-            }
+
         }
 
         private void textBoxApellido_Leave(object sender, EventArgs e)
         {
-            if (textBoxApellido.Text == "")
-            {
-                textBoxApellido.Text = "Apellido";
-                textBoxApellido.ForeColor = Color.Gray;
-            }
+
         }
 
         private void textBoxUsuario_Enter(object sender, EventArgs e)
         {
-            if (textBoxUsuario.Text == "Usuario")
-            {
-                textBoxUsuario.Text = "";
-                textBoxUsuario.ForeColor = Color.Gray;
-            }
+
         }
 
         private void textBoxUsuario_Leave(object sender, EventArgs e)
         {
-            if (textBoxUsuario.Text == "")
-            {
-                textBoxUsuario.Text = "Usuario";
-                textBoxUsuario.ForeColor = Color.Gray;
-            }
+
         }
 
         private void textBoxContrasenia_Enter(object sender, EventArgs e)
         {
-            if (textBoxContrasenia.Text == "Contraseña")
-            {
-                textBoxContrasenia.Text = "";
-                textBoxContrasenia.ForeColor = Color.Gray;
-            }
+
         }
 
         private void textBoxContrasenia_Leave(object sender, EventArgs e)
         {
-            if (textBoxContrasenia.Text == "")
-            {
-                textBoxContrasenia.Text = "Contraseña";
-                textBoxContrasenia.ForeColor = Color.Gray;
-            }
+
         }
 
         private void buttonRegistrar_Click(object sender, EventArgs e)
@@ -115,7 +83,9 @@ namespace ParcialLabo2
             if (jugadorNuevo.Nombre != "" && jugadorNuevo.Apellido != "" && jugadorNuevo.Usuario != "" && jugadorNuevo.Contrasenia != "")
             {
                 AccesoDatosJugador.EscribirDatosJugador(jugadorNuevo);
-                MessageBox.Show("Agregado exitosamente!");
+                MessageBox.Show("Registrado exitosamente!");
+                this.Close();
+                this.Hide();
 
             }
             else { MessageBox.Show("Completar todos los campos"); }
@@ -124,9 +94,27 @@ namespace ParcialLabo2
 
         private void FormularioRegistro_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Hide();
-            FormInicioSesion formInicio = new FormInicioSesion();
-            formInicio.ShowDialog();
+
+        }
+
+        private void textBoxNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //solo letras
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            {
+                // Cancelar la pulsación del caracter
+                e.Handled = true;
+            }
+        }
+
+        private void textBoxApellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //solo letras
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            {
+                // Cancelar la pulsación del caracter
+                e.Handled = true;
+            }
         }
     }
 }

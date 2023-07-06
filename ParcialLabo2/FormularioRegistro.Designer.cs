@@ -40,6 +40,10 @@
             iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
             iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             panel1 = new Panel();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
             buttonRegistrar = new Button();
             buttonCancelar = new Button();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
@@ -87,7 +91,6 @@
             textBoxUsuario.Name = "textBoxUsuario";
             textBoxUsuario.Size = new Size(190, 33);
             textBoxUsuario.TabIndex = 29;
-            textBoxUsuario.Text = "Usuario";
             textBoxUsuario.Enter += textBoxUsuario_Enter;
             textBoxUsuario.Leave += textBoxUsuario_Leave;
             // 
@@ -101,8 +104,8 @@
             textBoxNombre.Name = "textBoxNombre";
             textBoxNombre.Size = new Size(190, 33);
             textBoxNombre.TabIndex = 30;
-            textBoxNombre.Text = "Nombre";
             textBoxNombre.Enter += textBoxNombre_Enter;
+            textBoxNombre.KeyPress += textBoxNombre_KeyPress;
             textBoxNombre.Leave += textBoxNombre_Leave;
             // 
             // textBoxApellido
@@ -115,8 +118,8 @@
             textBoxApellido.Name = "textBoxApellido";
             textBoxApellido.Size = new Size(190, 33);
             textBoxApellido.TabIndex = 31;
-            textBoxApellido.Text = "Apellido";
             textBoxApellido.Enter += textBoxApellido_Enter;
+            textBoxApellido.KeyPress += textBoxApellido_KeyPress;
             textBoxApellido.Leave += textBoxApellido_Leave;
             // 
             // textBoxContrasenia
@@ -129,7 +132,6 @@
             textBoxContrasenia.Name = "textBoxContrasenia";
             textBoxContrasenia.Size = new Size(190, 33);
             textBoxContrasenia.TabIndex = 32;
-            textBoxContrasenia.Text = "Contraseña";
             textBoxContrasenia.Enter += textBoxContrasenia_Enter;
             textBoxContrasenia.Leave += textBoxContrasenia_Leave;
             // 
@@ -192,6 +194,10 @@
             // panel1
             // 
             panel1.BackColor = Color.Tan;
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(iconPictureBox5);
             panel1.Controls.Add(textBoxUsuario);
@@ -206,6 +212,58 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(333, 360);
             panel1.TabIndex = 37;
+            // 
+            // label5
+            // 
+            label5.Anchor = AnchorStyles.None;
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("MS Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = SystemColors.ActiveCaptionText;
+            label5.Location = new Point(69, 275);
+            label5.Name = "label5";
+            label5.Size = new Size(87, 15);
+            label5.TabIndex = 40;
+            label5.Text = "Contraseña";
+            // 
+            // label4
+            // 
+            label4.Anchor = AnchorStyles.None;
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("MS Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = SystemColors.ActiveCaptionText;
+            label4.Location = new Point(69, 208);
+            label4.Name = "label4";
+            label4.Size = new Size(63, 15);
+            label4.TabIndex = 39;
+            label4.Text = "Usuario";
+            // 
+            // label3
+            // 
+            label3.Anchor = AnchorStyles.None;
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("MS Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = SystemColors.ActiveCaptionText;
+            label3.Location = new Point(69, 141);
+            label3.Name = "label3";
+            label3.Size = new Size(71, 15);
+            label3.TabIndex = 38;
+            label3.Text = "Apellido";
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.None;
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("MS Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.ActiveCaptionText;
+            label2.Location = new Point(69, 79);
+            label2.Name = "label2";
+            label2.Size = new Size(55, 15);
+            label2.TabIndex = 37;
+            label2.Text = "Nombre";
             // 
             // buttonRegistrar
             // 
@@ -280,5 +338,9 @@
         private Panel panel1;
         public Button buttonRegistrar;
         public Button buttonCancelar;
+        public Label label5;
+        public Label label4;
+        public Label label3;
+        public Label label2;
     }
 }

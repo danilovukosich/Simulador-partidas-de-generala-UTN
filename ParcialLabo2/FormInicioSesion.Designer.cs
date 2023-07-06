@@ -40,9 +40,7 @@
             button1 = new Button();
             buttonRegistrarse = new Button();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            buttonCerrar = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)buttonCerrar).BeginInit();
             SuspendLayout();
             // 
             // label4
@@ -197,18 +195,6 @@
             iconPictureBox1.TabIndex = 27;
             iconPictureBox1.TabStop = false;
             // 
-            // buttonCerrar
-            // 
-            buttonCerrar.BackColor = Color.Transparent;
-            buttonCerrar.Image = (Image)resources.GetObject("buttonCerrar.Image");
-            buttonCerrar.Location = new Point(495, 9);
-            buttonCerrar.Name = "buttonCerrar";
-            buttonCerrar.Size = new Size(29, 26);
-            buttonCerrar.SizeMode = PictureBoxSizeMode.StretchImage;
-            buttonCerrar.TabIndex = 28;
-            buttonCerrar.TabStop = false;
-            buttonCerrar.Click += buttonCerrar_Click;
-            // 
             // FormInicioSesion
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -216,7 +202,6 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(536, 598);
-            Controls.Add(buttonCerrar);
             Controls.Add(iconPictureBox1);
             Controls.Add(buttonRegistrarse);
             Controls.Add(button1);
@@ -234,7 +219,6 @@
             FormClosed += FormInicioSesion_FormClosed;
             Load += FormInicioSesion_Load;
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)buttonCerrar).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -252,6 +236,5 @@
         public Button button1;
         public Button buttonRegistrarse;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        public PictureBox buttonCerrar;
     }
 }
